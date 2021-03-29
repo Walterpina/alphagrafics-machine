@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="248" height="61" viewBox="0 0 248 61">
+  <defs>
+    <filter id="Retângulo_106" x="0" y="0" width="248" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Ativar_Pausa" data-name="Ativar Pausa" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Retângulo_106)">
+      <rect id="Retângulo_106-2" data-name="Retângulo 106" width="230" height="43" rx="4" transform="translate(9 6)" fill="#0b6e00"/>
+    </g>
+    <text id="Ativar_Pausa-2" data-name="Ativar Pausa" transform="translate(86 27)" fill="#fff" font-size="15" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">Ativar Pausa</tspan></text>
+    <path id="Icon_map-food" data-name="Icon map-food" d="M30.654,9.5,28.194,27.825H19.888L17.438,9.406H27.579l2-6.581,1.136.326L28.8,9.484l1.857.014ZM16.264,20.1s.311-2.377-4-2.377H5.407c-4.3,0-4,2.377-4,2.377H16.264ZM1.41,25.448s-.3,2.377,4,2.377h6.861c4.308,0,4-2.377,4-2.377ZM15.619,24.26a1.5,1.5,0,0,0,0-2.971H2A1.5,1.5,0,0,0,2,24.26H15.619Z" transform="translate(31.28 6.176)" fill="#fff"/>
+  </g>
+</svg>

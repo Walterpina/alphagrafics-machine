@@ -1,0 +1,6 @@
+
+export class CadastroService {
+
+  constructor() {}
+
+}

@@ -1,0 +1,34 @@
+<body>
+    <div class="wrap">
+
+        <!-- Header -->
+        <div class="logo my-3" style="background-image: url(/assets/img/Logo_Heineken-Zero.png)"></div>
+        <h2 class="text-center mb-4">Regulamento da Campanha</h2>
+
+        <!-- Regulamento -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed porttitor dui. Donec molestie vestibulum sapien nec ullamcorper. Quisque nec consectetur urna. Quisque a erat sit amet neque aliquam tincidunt et ut ipsum. Quisque sollicitudin
+            convallis nunc, ac rutrum sapien blandit non. Ut volutpat dolor ac magna consectetur facilisis. Cras eget quam ac neque pharetra ultricies. Vivamus mollis at diam vel vehicula. Donec commodo dignissim ipsum, vitae euismod ligula maximus scelerisque.
+            Sed a rutrum est. Duis vel arcu metus. Integer tincidunt rhoncus est. Proin nunc neque, euismod sed leo eu, mattis fermentum elit. Duis egestas leo libero, vitae tincidunt sem semper et. Donec ut malesuada eros. Curabitur varius posuere diam,
+            ac tincidunt neque porta sed. Pellentesque at euismod augue. Etiam luctus congue vulputate. Vivamus maximus sit amet ante quis scelerisque. Ut ut odio vitae velit vehicula vehicula. Duis porttitor nisl non lobortis consequat. Aliquam erat
+            volutpat. In nibh mauris, egestas in metus vel, pulvinar pulvinar nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam semper ornare elit, varius bibendum lorem consequat quis. Nunc sed
+            efficitur ipsum. Vestibulum ac turpis diam. Morbi gravida convallis tortor. Pellentesque a odio sit amet ipsum commodo ultrices facilisis in ligula. Vivamus auctor interdum nisl id interdum. Morbi eget erat diam. Nullam in ultricies ipsum,
+            in pharetra tellus. Nulla fringilla gravida nunc vitae viverra. Donec mi arcu, mattis vel convallis sed, euismod ac dui. Nullam quis neque a mauris dignissim dignissim vitae ac dolor. Phasellus blandit turpis a ante semper commodo. Sed diam
+            elit, sollicitudin id tellus at, sollicitudin ornare orci. Nulla pulvinar ipsum non massa vehicula maximus. Phasellus tellus purus, pretium eu ipsum at, luctus sollicitudin nulla. Phasellus lobortis, diam id varius dapibus, risus felis ultrices
+            massa, sit amet iaculis nibh lorem eget ante. Vivamus eu rhoncus turpis, sit amet fringilla tellus. In convallis cursus varius. Proin at interdum dolor. Quisque pulvinar, est eget mollis sodales, arcu lacus tristique enim, sagittis eleifend
+            justo est ut sapien. Morbi ut lacus finibus, ultricies purus lacinia, scelerisque neque. Ut urna nisl, mollis quis eleifend facilisis, fermentum id ex. Suspendisse sit amet metus fringilla, eleifend orci eget, tincidunt sapien. Aenean quis
+            nunc sed lacus bibendum aliquam sit amet id ex.</p>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="check()">
+            <label class="form-check-label" for="exampleCheck1">Aceito os termos do regulamento</label>
+            <div class="my-4 d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary" (click)="goToPolicies()" [disabled]="!termChecked">Prosseguir</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        Todos os direitos reservados
+    </div>
+
+</body>

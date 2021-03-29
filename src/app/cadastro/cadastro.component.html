@@ -1,0 +1,36 @@
+<body>
+    <div class="wrap">
+        <!-- Header -->
+        <div class="logo my-3" style="background-image: url(/assets/img/Logo_Heineken-Zero.png)"></div>
+        <h2 class="text-center mb-4">Vamos ver sua identificação</h2>
+        <!-- <h3 class="text-center text-danger mb-4">Brinde resgatado anteriormente</h3> -->
+
+        <!-- Formulário -->
+        <form #form="ngForm">
+            <div class="form-group" [class.has-success]="inputName.valid && (inputName.dirty || inputName.touched)" [class.has-error]="!inputName.valid && (inputName.dirty || inputName.touched)">
+                <input type="text" for="inputSuccess" class="form-control" minlength="5" name="nome" #inputName="ngModel" placeholder="Nome" required ngModel autocomplete="off">
+                <span class="help-block" *ngIf="inputName.valid && (inputName.dirty || inputName.touched)"></span>
+                <span class="help-block" *ngIf="!inputName.valid && (inputName.dirty || inputName.touched)"> Campo obrigatório</span>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" minlength="5" aria-describedby="emailAjuda" placeholder="E-mail" required ngModel>
+                <span class="help-block" *ngIf="!inputName.valid && (inputName.dirty || inputName.touched)" style="color: red !important">* e-mail inválido</span>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" name="telefone" minlength="2" ngModel aria-describedby="telefoneAjuda" placeholder="(XX) XXXXXXXXX" pattern="/\(?([0-9]{2})\)?([ .-]?)([0-9]{5})\2([0-9]{4})/">
+                <span class="help-block" *ngIf="!inputName.valid && (inputName.dirty || inputName.touched)" style="color: red !important">* Ex de telefone válido (XX) 9 9999-9999</span>
+            </div>
+            <!-- <small>Aceito receber informações sobre campanhas e produtos da Heineken</small> -->
+
+            <div class="my-4 d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary" (click)="goToFinished()">Prosseguir</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        Todos os direitos reservados
+    </div>
+
+</body>

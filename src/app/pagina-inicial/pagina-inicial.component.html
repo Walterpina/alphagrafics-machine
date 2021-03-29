@@ -1,0 +1,32 @@
+<body>
+    <div class="wrap">
+        <!-- Header -->
+        <div class="logo my-3" style="background-image: url(/assets/img/Logo_Heineken-Zero.png)"></div>
+        <h2 class="text-center mb-4">Vamos ver sua identificação</h2>
+        <h3 class="text-center mb-4">Entre com sua data de nascimento:</h3>
+        <h3 class="text-center text-danger mb-4" [hidden]="messageError == ''">{{messageError}}</h3>
+    </div>
+
+    <form #form="ngForm">
+        <mat-form-field appearance="fill" class="example-form-field">
+            <mat-label>Data de nascimento</mat-label>
+            <input matInput [matDatepicker]="datepicker" name="birthday" [(ngModel)]="birthday">
+            <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+            <mat-datepicker #datepicker>
+                <mat-datepicker-actions>
+                    <button mat-button matDatepickerCancel>Cancel</button>
+                    <button mat-raised-button color="primary" matDatepickerApply (click)="goToRules()">Apply</button>
+                </mat-datepicker-actions>
+            </mat-datepicker>
+        </mat-form-field>
+    </form>
+
+    <div class="logo" style="background-image: url(/assets/img/AgoraVocePodeHeineken.png)"></div>
+
+</body>
+<footer>
+    <!-- Copyright -->
+    <div class="copyright">
+        Todos os direitos reservados
+    </div>
+</footer>
